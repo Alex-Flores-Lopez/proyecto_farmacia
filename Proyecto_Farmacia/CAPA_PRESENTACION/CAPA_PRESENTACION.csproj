@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B9644A7-1320-4712-BD89-02788CD723ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CAPA_PRESENTACION</RootNamespace>
+    <AssemblyName>CAPA_PRESENTACION</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Log" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONSULTAR_IMPORTAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONSULTAR_IMPORTAR.Designer.cs">
+      <DependentUpon>CONSULTAR_IMPORTAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EXPORTAR_GENERAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EXPORTAR_GENERAL.Designer.cs">
+      <DependentUpon>EXPORTAR_GENERAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EXPORTAR_PRINCIPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EXPORTAR_PRINCIPAL.Designer.cs">
+      <DependentUpon>EXPORTAR_PRINCIPAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCAMBIAR_ESTADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCAMBIAR_ESTADO.Designer.cs">
+      <DependentUpon>frmCAMBIAR_ESTADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmELIMINAR_USUARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmELIMINAR_USUARIO.Designer.cs">
+      <DependentUpon>frmELIMINAR_USUARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BUSCAR_USUARIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BUSCAR_USUARIO.Designer.cs">
+      <DependentUpon>frm_BUSCAR_USUARIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CONSULTAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CONSULTAR.Designer.cs">
+      <DependentUpon>frm_CONSULTAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CONSULTA_DW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CONSULTA_DW.Designer.cs">
+      <DependentUpon>frm_CONSULTA_DW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EXPORTAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EXPORTAR.Designer.cs">
+      <DependentUpon>frm_EXPORTAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_IMPORTAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_IMPORTAR.Designer.cs">
+      <DependentUpon>frm_IMPORTAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PRINCIPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PRINCIPAL.Designer.cs">
+      <DependentUpon>frm_PRINCIPAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PRINCIPAL_ADMINISTRADOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PRINCIPAL_ADMINISTRADOR.Designer.cs">
+      <DependentUpon>frm_PRINCIPAL_ADMINISTRADOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_USUARIO_MODIFICAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_USUARIO_MODIFICAR.Designer.cs">
+      <DependentUpon>frm_USUARIO_MODIFICAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_USUARIO_REGISTRAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_USUARIO_REGISTRAR.Designer.cs">
+      <DependentUpon>frm_USUARIO_REGISTRAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMPORTAR_PRINCIPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPORTAR_PRINCIPAL.Designer.cs">
+      <DependentUpon>IMPORTAR_PRINCIPAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CONSULTAR_IMPORTAR.resx">
+      <DependentUpon>CONSULTAR_IMPORTAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EXPORTAR_GENERAL.resx">
+      <DependentUpon>EXPORTAR_GENERAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EXPORTAR_PRINCIPAL.resx">
+      <DependentUpon>EXPORTAR_PRINCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCAMBIAR_ESTADO.resx">
+      <DependentUpon>frmCAMBIAR_ESTADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmELIMINAR_USUARIO.resx">
+      <DependentUpon>frmELIMINAR_USUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BUSCAR_USUARIO.resx">
+      <DependentUpon>frm_BUSCAR_USUARIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CONSULTAR.resx">
+      <DependentUpon>frm_CONSULTAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CONSULTA_DW.resx">
+      <DependentUpon>frm_CONSULTA_DW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EXPORTAR.resx">
+      <DependentUpon>frm_EXPORTAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_IMPORTAR.resx">
+      <DependentUpon>frm_IMPORTAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PRINCIPAL.resx">
+      <DependentUpon>frm_PRINCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PRINCIPAL_ADMINISTRADOR.resx">
+      <DependentUpon>frm_PRINCIPAL_ADMINISTRADOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_USUARIO_MODIFICAR.resx">
+      <DependentUpon>frm_USUARIO_MODIFICAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_USUARIO_REGISTRAR.resx">
+      <DependentUpon>frm_USUARIO_REGISTRAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMPORTAR_PRINCIPAL.resx">
+      <DependentUpon>IMPORTAR_PRINCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAPA_NEGOCIO\CAPA_NEGOCIO.csproj">
+      <Project>{fb88dcc8-a621-4154-bcad-cead082fe59e}</Project>
+      <Name>CAPA_NEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bien1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_warehouse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DATA3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bajar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database-backup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
